@@ -5,34 +5,25 @@ Getting Started
 Backend Setup
 Install Dependencies: In the backend directory, run:
 
-bash
-Copy code
+
 npm install
 Start the Backend Server: Run the following command to start the backend server:
 
-bash
-Copy code
 nodemon index.js
 The backend server will start on http://localhost:5000.
 
 Frontend Setup
 Install Dependencies: In the frontend directory, run:
 
-bash
-Copy code
 npm install
 Start the Frontend Server: Run the following command to start the frontend server:
 
-bash
-Copy code
 npm start
 The frontend application will start on http://localhost:3000.
 
 Registration and Login
 Register a User: Use Postman to make a POST request to register a new user. The endpoint for registration is:
 
-bash
-Copy code
 POST http://localhost:5000/api/user/register
 Use the following JSON data format for the request body:
 
