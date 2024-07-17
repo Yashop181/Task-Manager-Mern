@@ -10,7 +10,7 @@ npm install
 Start the Backend Server: Run the following command to start the backend server:
 
 nodemon index.js
-The backend server will start on http://localhost:5000.
+The backend server will start on `http://localhost:5000`.
 
 Frontend Setup
 Install Dependencies: In the frontend directory, run:
@@ -19,32 +19,31 @@ npm install
 Start the Frontend Server: Run the following command to start the frontend server:
 
 npm start
-The frontend application will start on http://localhost:3000.
+The frontend application will start on `http://localhost:3000`.
 
 Registration and Login
 Register a User: Use Postman to make a POST request to register a new user. The endpoint for registration is:
 
-POST http://localhost:5000/api/user/register
+POST `http://localhost:5000/api/user/register`
 Use the following JSON data format for the request body:
 
-json
-Copy code
-{
+
+```{
   "name": "yash",
   "email": "yash@gmail.com",
   "title": "Software Engineer",
   "password": "yash",
   "isAdmin": false
 }
-Set isAdmin to true if registering an admin user.
-Login: After registering the user, go to http://localhost:3000 in your browser to access the login page. Enter the registered email and password to log in.
+```
+
+-Set isAdmin to true if registering an admin user.
+
+Login: After registering the user, go to `http://localhost:3000` in your browser to access the login page. Enter the registered email and password to log in.
 
 Available Scripts
 In the project directory, you can run:
 
 npm start
 Runs the app in development mode.
-Open http://localhost:3000 to view it in your browser.
-
-The page will reload when you make changes.
-You may also see any lint errors in the console.
+Open `http://localhost:3000` to view it in your browser.
