@@ -1,32 +1,44 @@
-Task Management App
+### Task Management App
+
 This project is a task management system built with the MERN stack (MongoDB, Express, React, Node.js).
 
 Getting Started
 Backend Setup
-Install Dependencies: In the backend directory, run:
+Install Dependencies: In the backend directory, 
 
+-run: npm install
 
-npm install
-Start the Backend Server: Run the following command to start the backend server:
+Start the Backend Server: Run the following command to start the 
 
-nodemon index.js
-The backend server will start on `http://localhost:5000`.
+backend server:
+
+-nodemon index.js
+
+-The backend server will start on `http://localhost:5000`.
 
 Frontend Setup
-Install Dependencies: In the frontend directory, run:
 
-npm install
-Start the Frontend Server: Run the following command to start the frontend server:
+Install Dependencies: In the frontend directory, 
+
+-run: npm install
+
+Start the Frontend Server: Run the following command to start the 
+
+frontend server:
 
 npm start
+
 The frontend application will start on `http://localhost:3000`.
 
-Registration and Login
-Register a User: Use Postman to make a POST request to register a new user. The endpoint for registration is:
+### Registration and Login
+
+Register a User: Use Postman to make a POST request to register a new user. 
+
+The endpoint for registration is:
 
 POST `http://localhost:5000/api/user/register`
-Use the following JSON data format for the request body:
 
+Use the following JSON data format for the request body:
 
 ```{
   "name": "yash",
@@ -45,5 +57,6 @@ Available Scripts
 In the project directory, you can run:
 
 npm start
+
 Runs the app in development mode.
 Open `http://localhost:3000` to view it in your browser.
