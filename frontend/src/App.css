@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-1: #242526;
+  --color-2: white;
+  --color-3: #0084ff;
+  --color-4: gray;
+  --color-5: #eb4034;
+  --color-6: #333;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+  --transition-duration: 0.3s;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: var(--color-1);
+  color: var(--color-2);
+  overflow-x: hidden;
+}
+
+.background_container_login {
+  background: #101B17;
+  background-image: url("https://images.unsplash.com/photo-1608817618454-b0e9aef7a342?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  height: 750px;
+  max-height: 100vh;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  max-width: 400px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 15px var(--shadow-color);
+  padding: 20px 30px;
+  border-radius: var(--border-radius);
+  transition: transform var(--transition-duration);
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+section h3 {
+  text-align: center;
+  font-size: 28px;
+  color: var(--color-2);
+  margin-bottom: 20px;
+}
+
+section .form {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.input_container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.input_container input {
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  margin-top: 10px;
+  border: 1px solid var(--color-6);
+  border-radius: var(--border-radius);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-2);
+  transition: border-color var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.input_container input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+.input_container input:focus {
+  border-color: var(--color-3);
+  box-shadow: 0 0 10px var(--color-3);
+}
+
+.input_container label {
+  color: var(--color-2);
+}
+
+.show_password {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-2);
+  cursor: pointer;
+}
+
+.btn_container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: var(--border-radius);
+  border: none;
+  background: var(--color-3);
+  color: var(--color-2);
+  cursor: pointer;
+  transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+  font-size: 18px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px var(--shadow-color);
+}
+
+.error {
+  text-align: center;
+  color: var(--color-5);
+  margin-top: 20px;
+}
+
+/* Table CSS starts from here */
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  color: var(--color-6);
+  box-shadow: 0 0 20px var(--shadow-color);
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+table, th, td {
+  border: none;
+}
+
+tr {
+  background: #fefefece;
+}
+
+th {
+  background: #101B17;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive table */
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+  table {
+    width: 100%;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-column);
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.error-page {
+  height: 100vh;
+  padding-top: 10vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--color-1);
+  color: var(--color-2);
+}
+
+/* Responsive login section */
+@media (max-width: 768px) {
+  section {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .background_container_login {
+    padding-top: 20px;
+  }
+}
