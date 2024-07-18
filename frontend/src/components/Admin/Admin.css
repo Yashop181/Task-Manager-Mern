@@ -252,15 +252,17 @@ body {
   }
 }
 
-/* Priority List Color */
 .high-priority {
-  background-color: #ffcccc; /* Light red */
+  background-color: #ff4d4d; /* Bright red */
+  color: #ffffff; /* White text */
 }
 
 .medium-priority {
-  background-color: #fff5cc; /* Light yellow */
+  background-color: #ffcc00; /* Bright yellow */
+  color: #000000; /* Black text */
 }
 
 .low-priority {
-  background-color: #ccffcc; /* Light green */
+  background-color: #66ff66; /* Bright green */
+  color: #000000; /* Black text */
 }
